@@ -1,0 +1,54 @@
+{
+  "name": "@kondenx/xkondenx",
+  "version": "1.1.0",
+  "description": "这是一个简单的 WEB 端快捷键监控和设置工具包",
+  "keywords": [
+    "快捷键",
+    "键盘",
+    "工具包",
+    "热键",
+    "浏览器",
+    "Hot Keys",
+    "Shortcut keys",
+    "Keyboard shortcut",
+    "Listen keys"
+  ],
+  "author": "kondenx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XkondenX/tea-kdx.git"
+  },
+  "homepage": "https://github.com/XkondenX/tea-kdx/#README",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/*.ts",
+    "dist/*.html",
+    "dist/*.js",
+    "*.d.ts",
+    "*.js"
+  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "typings": "./index.d.ts",
+  "scripts": {
+    "compile": "tsc lib/shortcut.ts --sourceMap true --outDir ./dist && npm run minify",
+    "minify": "jsmin -o dist/shortcut.min.js ./dist/shortcut.js",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "jsmin": "^1.0.1",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@kondenx/xkondenx": "^1.0.4",
+    "listen-keys": "^1.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/XkondenX/tea-kdx/issues"
+  }
+}
