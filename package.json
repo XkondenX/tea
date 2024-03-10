@@ -1,6 +1,6 @@
 {
   "name": "@kondenx/xkondenx",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "这是一个简单的 WEB 端快捷键监控和设置工具包",
   "keywords": [
     "快捷键",
@@ -16,7 +16,7 @@
   "author": "kondenx",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XkondenX/tea-kdx.git"
+    "url": "https://github.com/XkondenX/tea-kdx.git"
   },
   "homepage": "https://github.com/XkondenX/tea-kdx/#README",
   "main": "index.js",
